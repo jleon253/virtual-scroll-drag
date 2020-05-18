@@ -1,5 +1,15 @@
 # VirtualScroll
 
+In this app, I test Virtual Scroll (ScrollingModule) and Drag & Drop (DragDropModule) in Angular 9. All this using CDK (Component Dev Kit - By: Angular Material).
+
+**Demo:** https://jleon253.github.io/virtual-scroll-drag/
+
+### Dev tools used:
+
+> - HTML, CSS, Bootstrap
+> - CDK (Component Dev Kit - By: Angular Material: https://material.angular.io/cdk/categories)
+> - ES6, Angular 9
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
 ## Development server
