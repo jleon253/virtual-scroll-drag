@@ -1,0 +1,18 @@
+.box-drag{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1); 
+  transition: box-shadow 0.3s ease-out;
+}
+
+.box-drag:hover{
+  cursor: grab;
+}
+
+.box-drag:active{
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.1); 
+  cursor: grabbing;
+}

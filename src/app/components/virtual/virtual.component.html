@@ -1,0 +1,20 @@
+<h3 class="font-weight-light">Virtual scroll</h3>
+<hr/>
+
+<div class="row mb-3" *ngIf="personas">
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mb-2">
+    <button type="button" class="btn btn-success btn-block btn-sm" (click)="irInicio()">Ir a inicio</button>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mb-2">
+    <button type="button" class="btn btn-success btn-block btn-sm" (click)="irMitad()">Ir a mitad</button>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mb-2">
+    <button type="button" class="btn btn-success btn-block btn-sm" (click)="irFinal()">Ir a final</button>
+  </div>
+</div>
+
+<cdk-virtual-scroll-viewport id="viewport" itemSize="50" class="list-gorup" style="height: 350px;">
+  <div class="list-group-item" *cdkVirtualFor="let persona of personas; let i = index; let conteo = count">
+    Item {{i}} / {{conteo}}
+  </div>
+</cdk-virtual-scroll-viewport>
